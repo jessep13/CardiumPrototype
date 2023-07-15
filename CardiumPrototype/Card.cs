@@ -11,7 +11,7 @@ namespace CardiumPrototype
 		/// <summary>
 		/// CardType categories the main effect types of the cards.
 		/// </summary>
-		enum CardType
+		public enum CardType
 		{
 			/// <summary>
 			/// Energy cards increase the maximum energy the user can hold.
@@ -52,26 +52,26 @@ namespace CardiumPrototype
 		/// <summary>
 		/// Type represents the kind of card this effect belongs to.
 		/// </summary>
-		private readonly CardType type;
+		public CardType Type { get; }
 
 		/// <summary>
 		/// Cost represents the amount of energy needed to play the card.
 		/// </summary>
-		private readonly int cost;
+		public int Cost { get; }
 
 		/// <summary>
 		/// Power represents damage for attack, and protection for defense. Unused for other types of skills.
 		/// </summary>
-		private readonly int power;
+		public int Power { get; }
 
 		/// <summary>
 		/// Use represents the number of times a skill can be used. Set this to 0 or below to allow for the skill to be infinitely used.
 		/// </summary>
-		private readonly int use;
+		public int Use { get; }
 
 		/// <summary>
 		/// Description states the additional information about the card. Can be set to null to have no additonal description.
 		/// </summary>
-		private readonly string? description;
+		public string? Description { get; }
 	}
 }
