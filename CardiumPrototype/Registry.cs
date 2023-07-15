@@ -22,7 +22,7 @@ namespace CardiumPrototype
 		/// <param name="card"> The card to be registered. </param>
 		/// <returns> The card that was registered. </returns>
 		public static Card RegisterCard(Card card)
-		{
+		{			
 			Cards.Add(card);
 			
 			return card;

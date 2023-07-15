@@ -9,7 +9,7 @@ namespace CardiumPrototype
 	/// <summary>
 	/// CardInit initializes the cards used in the game.
 	/// </summary>
-	internal class CardInit
+	internal class CardInit : Initializer
 	{
 		// Some example cards
 		public static readonly Card excalibur = Registry.RegisterCard(new Card(
