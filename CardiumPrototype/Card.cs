@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CardiumPrototype
 {
+	/// <summary>
+	/// Card represents a drawn card from a deck.
+	/// </summary>
 	internal class Card
 	{
 		/// <summary>
@@ -68,6 +71,11 @@ namespace CardiumPrototype
 		/// Use represents the number of times a skill can be used. Set this to 0 or below to allow for the skill to be infinitely used.
 		/// </summary>
 		public int Use { get; }
+
+		/// <summary>
+		/// Name represents the name of the card itself.
+		/// </summary>
+		public string Name { get; }
 
 		/// <summary>
 		/// Description states the additional information about the card. Can be set to null to have no additonal description.
