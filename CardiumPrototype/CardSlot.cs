@@ -44,8 +44,9 @@ namespace CardiumPrototype
 		{
 			// If our slot is empty, don't activate the card.
 			if (_currCard == null) return;
-			
-			// TODO: Add code to trigger the card.
+
+			// Trigger the card
+			_currCard.Action();
 
 			// Increase the uses.
 			_uses++;

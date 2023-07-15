@@ -81,5 +81,20 @@ namespace CardiumPrototype
 		/// Description states the additional information about the card. Can be set to null to have no additonal description.
 		/// </summary>
 		public string? Description { get; }
+
+		/// <summary>
+		/// CardAction is the type of method for using a card. When porting to Unity, this will take in the caster and target information.
+		/// </summary>
+		public delegate void CardAction();
+
+		/// <summary>
+		/// Private field of Action
+		/// </summary>
+		private CardAction action;
+		
+		/// <summary>
+		/// Action will perform the card.
+		/// </summary>
+		public CardAction Action { get { return action; } }
 	}
 }
