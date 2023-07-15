@@ -12,11 +12,6 @@ namespace CardiumPrototype
 	internal class Card
 	{
 		/// <summary>
-		/// AllCards holds every constructed card made when initializing. 
-		/// </summary>
-		public static List<Card> AllCards = new();
-
-		/// <summary>
 		/// Name represents the name of the card itself.
 		/// </summary>
 		public string Name { get; }
@@ -120,9 +115,6 @@ namespace CardiumPrototype
 			Use = use;
 			Power = power;
 			Description = description;
-
-			// Add the card to the list.
-			AllCards.Add(this);
 		}
 	}
 }
